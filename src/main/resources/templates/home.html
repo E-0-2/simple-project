@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            text-align: center;
+            border-radius: 15px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        p{
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div>
+    <h1>Main Page</h1>
+    <p>Member Features</p>
+
+      <button><a href="/members/new">Sing up</a></button>
+      <button><a href="/members">Member List</a></button>
+
+  </div>
+</div>
+</body>
+</html>
